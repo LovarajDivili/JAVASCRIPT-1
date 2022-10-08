@@ -1,5 +1,5 @@
-const inventory = require("./inventory.js")
-const problem6 = require("./problem6.js")
+const inventory = require("../inventory.js")
+const problem6 = require("../problem6.js")
 
 const result6 = problem6(inventory)
 
