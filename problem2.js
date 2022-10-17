@@ -1,7 +1,5 @@
-let problem2 = (inventory) => {
-    let car = inventory[inventory.length-1]
-    return car
+const problem2 = (inventory, objectIndex = inventory.length-1) => {
+    return inventory[objectIndex]
 }
-
 
 module.exports = problem2
