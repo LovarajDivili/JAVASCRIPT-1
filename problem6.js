@@ -1,9 +1,10 @@
-const problem6 = (inventory) => {
-    let cars_with_BMW_Audi = []
-
+const problem6 = (inventory,arrayWithRequiredCarMake) => {
+    const cars_with_BMW_Audi = []
     for (let i=0;i<inventory.length;i++){
-        if ((inventory[i].car_make === "BMW") || (inventory[i].car_make === "Audi")) {
-            cars_with_BMW_Audi.push(inventory[i])
+        for (let requiredCarMake of arrayWithRequiredCarMake) {
+            if ((inventory[i].car_make === requiredCarMake)) {
+                cars_with_BMW_Audi.push(inventory[i])
+            }
         }
     }
     return cars_with_BMW_Audi
