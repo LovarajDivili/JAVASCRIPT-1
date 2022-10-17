@@ -1,13 +1,9 @@
-let problem1 = (inventory) => {
-    let id = 33
-    let car = null
+const problem1 = (inventory, id=33) => {
     for (let i=0;i< inventory.length;i++){
         if (inventory[i].id === id) {
-            car = inventory[i]
-            break
+            return inventory[i]
         }
     }
-    return car
 }
 
 
