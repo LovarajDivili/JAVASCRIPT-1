@@ -1,7 +1,7 @@
 const inventory = require("../inventory.js")
 const problem2 = require("../problem2.js")
 
-const car = problem2(inventory)
+const lastCar = problem2(inventory)
 
-let {car_make,car_model} = car
+const {car_make,car_model} = lastCar
 console.log(`Last car is a ${car_make} ${car_model}`)
